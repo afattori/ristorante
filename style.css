@@ -1,19 +1,22 @@
 /* =========================================================
    Ristorantino Da Enzo — design tokens
-   Palette: deep Adriatic teal + foam + sand, chalk & rope motifs
+   Palette ispirata al locale reale: legno caldo (travi, sale),
+   rosso e giallo delle insegne/infissi, blu onda del logo,
+   tovaglie bianche e sabbia della spiaggia sul retro.
    Type: Fraunces (display) / Work Sans (body) / Space Mono (utility)
    ========================================================= */
 
 :root {
-  --abyss: #0c2b2e;
-  --abyss-2: #123b3e;
-  --foam: #eef2e6;
-  --paper: #f7f3e7;
-  --sand: #dccba0;
-  --amber: #d98c2b;
-  --coral: #c1443d;
-  --ink: #142521;
-  --ink-soft: #3c4e49;
+  --abyss: #4a2e1a;
+  --abyss-2: #6b4226;
+  --foam: #f7f1e4;
+  --paper: #fbf7ee;
+  --sand: #d8b778;
+  --amber: #e0a83a;
+  --coral: #b4362b;
+  --sea: #3e7c8c;
+  --ink: #241608;
+  --ink-soft: #5c4630;
 
   --font-display: "Fraunces", serif;
   --font-body: "Work Sans", sans-serif;
@@ -83,7 +86,7 @@ a { color: inherit; }
   color: var(--abyss);
   font-weight: 700;
 }
-.btn-primary:hover { background: #e6a24a; }
+.btn-primary:hover { background: #eab85e; }
 
 .btn-ghost {
   background: transparent;
@@ -181,8 +184,8 @@ a { color: inherit; }
 .hero-tide {
   position: absolute;
   inset: auto 0 0 0;
-  color: var(--foam);
-  opacity: 0.12;
+  color: var(--sea);
+  opacity: 0.35;
   height: 200px;
 }
 .hero-tide svg { width: 100%; height: 100%; }
@@ -224,7 +227,7 @@ a { color: inherit; }
 
 .hero-lede {
   font-size: 1.1rem;
-  color: rgba(238, 242, 230, 0.85);
+  color: rgba(247, 241, 228, 0.85);
   max-width: 56ch;
   margin: 0 0 30px;
 }
@@ -243,7 +246,7 @@ a { color: inherit; }
   font-size: 0.85rem;
   padding: 8px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(238, 242, 230, 0.3);
+  border: 1px solid rgba(247, 241, 228, 0.3);
 }
 .rating-badge svg { color: var(--amber); }
 
@@ -280,7 +283,7 @@ a { color: inherit; }
   color: var(--ink-soft);
   margin-bottom: 44px;
 }
-.section-intro.light { color: rgba(238, 242, 230, 0.75); }
+.section-intro.light { color: rgba(247, 241, 228, 0.75); }
 
 .two-col {
   display: grid;
@@ -290,7 +293,7 @@ a { color: inherit; }
 }
 
 .col-text p { color: var(--ink-soft); max-width: 54ch; }
-.section-dark .col-text p { color: rgba(238, 242, 230, 0.75); }
+.section-dark .col-text p { color: rgba(247, 241, 228, 0.75); }
 
 .net-card {
   position: relative;
@@ -335,7 +338,7 @@ a { color: inherit; }
 
 .chalk-card {
   position: relative;
-  background: #16302e;
+  background: #3a2415;
   border: 1px dashed rgba(220, 203, 160, 0.4);
   border-radius: var(--radius);
   padding: 32px 26px 26px;
@@ -368,7 +371,7 @@ a { color: inherit; }
   color: var(--foam);
 }
 .chalk-card p {
-  color: rgba(238, 242, 230, 0.7);
+  color: rgba(247, 241, 228, 0.7);
   font-size: 0.95rem;
   margin: 0;
 }
@@ -427,14 +430,14 @@ a { color: inherit; }
 .hours-table th, .hours-table td {
   text-align: left;
   padding: 10px 20px 10px 0;
-  border-bottom: 1px solid rgba(238, 242, 230, 0.15);
+  border-bottom: 1px solid rgba(247, 241, 228, 0.15);
   font-weight: 400;
 }
 .hours-table th { color: var(--amber); }
 
 .hours-note {
   font-size: 0.9rem;
-  color: rgba(238, 242, 230, 0.65);
+  color: rgba(247, 241, 228, 0.65);
   max-width: 46ch;
 }
 .hours-note a { color: var(--amber); }
@@ -485,14 +488,14 @@ a { color: inherit; }
   flex-wrap: wrap;
   gap: 24px;
 }
-.footer-inner p { margin: 4px 0; color: rgba(238, 242, 230, 0.7); }
+.footer-inner p { margin: 4px 0; color: rgba(247, 241, 228, 0.7); }
 .footer-inner a { text-decoration: none; }
 .footer-actions { display: flex; gap: 12px; }
 .footer-note {
   text-align: center;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: rgba(238, 242, 230, 0.4);
+  color: rgba(247, 241, 228, 0.4);
   margin: 40px 0 0;
 }
 
