@@ -9,12 +9,13 @@
 :root {
   --abyss: #123246;
   --abyss-2: #1c4f63;
-  --foam: #f6f3ea;
-  --paper: #fdfaf1;
-  --sand: #d8b778;
-  --amber: #e0a83a;
+  --foam: #f2f6f4;
+  --paper: #ffffff;
+  --sand: #e3c98a;
+  --amber: #f2a900;
   --coral: #c1342a;
   --sea: #2f7b8c;
+  --azure: #aed4de;
   --ink: #142027;
   --ink-soft: #4c5f68;
 
@@ -86,7 +87,7 @@ a { color: inherit; }
   color: var(--abyss);
   font-weight: 700;
 }
-.btn-primary:hover { background: #eab85e; }
+.btn-primary:hover { background: #ffc233; }
 
 .btn-ghost {
   background: transparent;
@@ -323,24 +324,34 @@ a { color: inherit; }
 
 .net-card {
   position: relative;
-  background: var(--abyss);
-  color: var(--sand);
+  background:
+    repeating-conic-gradient(var(--paper) 0% 25%, var(--azure) 0% 50%)
+    0 0 / 44px 44px;
   border-radius: var(--radius);
   aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1px solid var(--azure);
 }
-.net-pattern { position: absolute; inset: 0; width: 100%; height: 100%; }
+.net-pattern { display: none; }
 .net-label {
   position: relative;
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: center;
   color: var(--foam);
   line-height: 1.3;
+  background: var(--abyss);
+  padding: 22px 26px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(18, 50, 70, 0.25);
 }
 
 /* ---------- Rope divider (signature) ---------- */
