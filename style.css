@@ -7,16 +7,16 @@
    ========================================================= */
 
 :root {
-  --abyss: #4a2e1a;
-  --abyss-2: #6b4226;
-  --foam: #f7f1e4;
-  --paper: #fbf7ee;
+  --abyss: #123246;
+  --abyss-2: #1c4f63;
+  --foam: #f6f3ea;
+  --paper: #fdfaf1;
   --sand: #d8b778;
   --amber: #e0a83a;
-  --coral: #b4362b;
-  --sea: #3e7c8c;
-  --ink: #241608;
-  --ink-soft: #5c4630;
+  --coral: #c1342a;
+  --sea: #2f7b8c;
+  --ink: #142027;
+  --ink-soft: #4c5f68;
 
   --font-display: "Fraunces", serif;
   --font-body: "Work Sans", sans-serif;
@@ -122,7 +122,17 @@ a { color: inherit; }
   color: var(--foam);
   margin-right: auto;
 }
-.brand-mark { color: var(--amber); }
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--foam);
+  color: var(--abyss);
+  flex-shrink: 0;
+}
 .brand-name {
   font-family: var(--font-display);
   font-weight: 600;
@@ -130,6 +140,17 @@ a { color: inherit; }
   letter-spacing: 0.01em;
 }
 .brand-name.light { color: var(--foam); }
+.brand-est {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--sand);
+  align-self: flex-end;
+  padding-bottom: 3px;
+  display: none;
+}
+@media (min-width: 480px) {
+  .brand-est { display: inline; }
+}
 
 .main-nav {
   display: flex;
@@ -155,7 +176,7 @@ a { color: inherit; }
 }
 .main-nav a:hover::after { transform: scaleX(1); }
 
-.header-call { color: var(--abyss); }
+.header-call { color: var(--foam); border-color: rgba(247, 241, 228, 0.35); }
 
 .nav-toggle {
   display: none;
@@ -184,8 +205,8 @@ a { color: inherit; }
 .hero-tide {
   position: absolute;
   inset: auto 0 0 0;
-  color: var(--sea);
-  opacity: 0.35;
+  color: var(--sand);
+  opacity: 0.18;
   height: 200px;
 }
 .hero-tide svg { width: 100%; height: 100%; }
@@ -202,6 +223,11 @@ a { color: inherit; }
 }
 
 .hero-inner { position: relative; max-width: 720px; }
+
+.hero-emblem {
+  color: var(--amber);
+  margin-bottom: 20px;
+}
 
 .eyebrow {
   font-family: var(--font-mono);
@@ -338,7 +364,7 @@ a { color: inherit; }
 
 .chalk-card {
   position: relative;
-  background: #3a2415;
+  background: #0e2b3a;
   border: 1px dashed rgba(220, 203, 160, 0.4);
   border-radius: var(--radius);
   padding: 32px 26px 26px;
